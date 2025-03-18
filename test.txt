@@ -1,1 +1,40 @@
-probandooo
+SELECTORES: los hay de elementos como h1, h3 etc. tambien los hay de identidad que junto a la etiqueta del elemento se pone id ="" y en el documento css se pone un # y el nombre del elemento
+los hay de clase que se pone class ="" y en el documento se hace referencia con . seguidon del nombre de la clase
+tambien se pueden combinar selectores por ejemplo tenemos la clase rojo y varios parrafos p, si escribimos p.rojo seleccionamos los parrafos de la 
+clase rojo y solo esos. ademas se le puede asignar mas de una clase a un elemento dejando un espacio ej: class ="rojo parrafo-principal"(ahora tiene las clases rojo y parradfo principal)
+para aplicarle una misma propiedad a diferentes elementos se aniade una coma ejemplo p,h1{ color:red;}
+el * es un selector universal que sirve para aplicar las propiedades a todos los elementos
+
+JERARQUIA(si hay superposicion de estilos cuales se usan sobre otros):se toma el primer estamento delcarado. es decir lo primero que lea la maquina del codigo
+dentro del documento html: se lee de arriba hacia abajo. si se declara un estilo dentro de un elemento(estilo en linea) se mantendra ese estilo por sobre el estilo
+de la etiqueta style y sobre el documento css
+
+COMENTARIOS: se comenta dentro de css asi: /* texto */
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The datalist element</h1>
+
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+</body>
+</html>

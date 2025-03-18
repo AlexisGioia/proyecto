@@ -1,1 +1,45 @@
-base
+﻿/*pruebas de introduccion a css*/
+/*
+body
+{
+    background-color:black;
+}
+#titulo-principal {
+    color:indianred;
+}
+h5{
+    color:blue;
+}
+.parrafo{
+    color:blue;
+    background-color:red;
+}
+*/
+
+div{
+    width: 150px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.overline {
+    text-decoration-line:spelling-error;
+}
+.line_through{
+    text-decoration-line:line-through;
+}
+#table{
+    background-color:aqua;
+}
+#cuerpo{ 
+    background-color:yellowgreen
+}
+#cabecera{
+    background-color:navy;
+    
+              
+}
+#pie{
+    background-color:rosybrown;
+}
+
