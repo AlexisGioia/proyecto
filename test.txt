@@ -11,9 +11,29 @@ de la etiqueta style y sobre el documento css
 
 COMENTARIOS: se comenta dentro de css asi: /* texto */
 
+El Box Model es una forma de pensar acerca de cómo se muestran los elementos HTML en una página web. Cada elemento es considerado una caja con cuatro capas: contenido, padding, borde y margen.
+El ancho total disponible para un elemento de nivel de bloque es dado por su padre.
+Por defecto, los elementos inline, como imágenes y enlaces, tienen una capa de contenido que ocupa tanto ancho como sea necesario para mostrar el contenido. No hacen uso de todo el espacio disponible proporcionado por el elemento padre.
+Por defecto, el borde se aplicará en los bordes del contenido de la caja, a menos que se haya agregado padding. La capa de padding se envuelve alrededor de la caja de contenido para crear espacio extra dentro del elemento y empujar el borde hacia afuera.
+Border es la 3ra capa. Rodea el padding.
+Puedes dar diferentes valores de padding a cada uno de los 4 lados. Agrega 4 valores, separados por espacios, en el orden: arriba, derecha, abajo, izquierda.
+Para calcular las dimensiones totales de la caja, necesitas sumar las dimensiones de las 3 capas: contenido, relleno y borde.
+Margin es la capa más exterior en el Modelo de Caja. Está envuelto alrededor de la capa de borde y crea un espacio extra fuera del elemento, entre el borde y los elementos adyacentes. El margin es transparente, asegura la separación y previene la superposición.
 
-
-
+FLEXBOX: Los sitios web modernos están diseñados para verse bien en cualquier dispositivo, independientemente de las dimensiones de la pantalla. 
+En esta lección, aprenderás a usar el Flexbox layout para organizar elementos HTML para diseños más responsivos.
+La propiedad display puede anular los comportamientos predeterminados de los elementos en línea y de nivel de bloque. por ejemplo para que el elemento <a> se comporte como un elemento de bloque hay que poner display: block;
+Flexbox se utiliza para organizar los elementos dentro de un contenedor automáticamente. Para crear un contenedor flex (flexible), establezca la propiedad de visualización en flex asi:display: flex;
+Por defecto, los elementos hijo dentro de un contenedor padre flex se organizan automáticamente en 1 fila, intentando hacer el mejor uso del espacio disponible
+Por defecto, los elementos hijos en un contenedor flex están organizados en una fila (horizontalmente). Establece la subpropiedad flex-direction a column(flex-direction:column;)para organizar los elementos verticalmente dentro de un contenedor flex.
+Por defecto, los elementos hijos en un contenedor flex intentarán ajustarse en una sola línea. Puedes cambiar eso y permitir que los elementos se ajusten según sea necesario con la subpropiedad flex-wrap(flex-wrap:wrap;). Nuevamente, los elementos se organizarán automáticamente y el número de líneas dependerá del tamaño de la pantalla.
+Por defecto, los elementos secundarios dentro de un contenedor flex se organizarán automáticamente. El espacio que ocupa cada elemento dependerá de su contenido. Por lo tanto, es posible que algunos elementos se muestren más grandes que otros si tienen más contenido.
+Para tener más control sobre el espacio que los elementos ocupan dentro de un contenedor flex, puedes configurar la sub-propiedad flex-grow. 
+La sub-propiedad flex-grow da a un elemento la capacidad de crecer para ocupar más espacio cuando este espacio está disponible en el contenedor (pantalla más grande). Acepta un valor sin unidad como una proporción.
+El ejemplo muestra 3 elementos flex con proporciones relativas de 1, 2 y 3.
+Los valores posibles para flex-grow son números enteros no negativos (0, 1, 2, 3, ...). Estos son valores sin unidad que sirven como proporciones para las dimensiones de los elementos.
+flex-shrink hace lo opuesto de flex-grow. Se utiliza para adaptar tu diseño a pantallas más pequeñas. 
+El valor determina cuánto se reducirá un elemento flexible en relación con el resto de los elementos cuando no hay suficiente espacio en el contenedor flexible. Un valor más alto significa que el elemento se reducirá más.
 
 <!DOCTYPE html>
 <html>
