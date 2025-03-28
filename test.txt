@@ -35,6 +35,24 @@ Los valores posibles para flex-grow son números enteros no negativos (0, 1, 2, 
 flex-shrink hace lo opuesto de flex-grow. Se utiliza para adaptar tu diseño a pantallas más pequeñas. 
 El valor determina cuánto se reducirá un elemento flexible en relación con el resto de los elementos cuando no hay suficiente espacio en el contenedor flexible. Un valor más alto significa que el elemento se reducirá más.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ATRUBUTOS UTILES/COMUNES:
+color: cambia el color de los textos. usar rgb para mas presicion
+background-color: cambia el color de fondo|BUENA PRACTICA: usar un div para controlar las dimensiones del fondo y no se descontrolen
+text-align: establece la posicion del texto. left, center, right, end, start, justify
+text-decoration-line: establece las lineas que subrayan el texto: overline, line-trought,underline
 <!DOCTYPE html>
 <html>
 <body>
