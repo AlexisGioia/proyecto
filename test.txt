@@ -52,7 +52,13 @@ ATRUBUTOS UTILES/COMUNES:
 color: cambia el color de los textos. usar rgb para mas presicion
 background-color: cambia el color de fondo|BUENA PRACTICA: usar un div para controlar las dimensiones del fondo y no se descontrolen
 text-align: establece la posicion del texto. left, center, right, end, start, justify
-text-decoration-line: establece las lineas que subrayan el texto: overline, line-trought,underline
+text-decoration-line: establece las lineas que subrayan el texto: overline, line-trought,underline, none(anula)| se agrega un segundk argumento con un espacio para combinar 2 estilos diferentes y ademas se pueden usar los argumentos de los metodos de abajo
+text-decoration-color: establece el color del subrayado
+text-decoration-style: establece el estilo del subrayado. dotted ,wawy, solid dashed doble
+text-decoration-thickness: establece el ancho en pixeles
+
+
+
 <!DOCTYPE html>
 <html>
 <body>
