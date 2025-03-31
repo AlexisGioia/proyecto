@@ -56,7 +56,7 @@ text-decoration-line: establece las lineas que subrayan el texto: overline, line
 text-decoration-color: establece el color del subrayado
 text-decoration-style: establece el estilo del subrayado. dotted ,wawy, solid dashed doble
 text-decoration-thickness: establece el ancho en pixeles
-
+text-transform: modifica mayusculas o minusculas del texto. Uppercase, Lowercase, Capitalize, None
 
 
 <!DOCTYPE html>
