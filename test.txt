@@ -57,8 +57,12 @@ text-decoration-color: establece el color del subrayado
 text-decoration-style: establece el estilo del subrayado. dotted ,wawy, solid dashed doble
 text-decoration-thickness: establece el ancho en pixeles
 text-transform: modifica mayusculas o minusculas del texto. Uppercase, Lowercase, Capitalize, None
-
-
+text-indent:crea una sangría. PX
+letter-spacing: separacion de letras en PX
+line-height: define la altura de la linea en porcentaje de factor
+word-spacing: espaciado de palabras en PX
+white-space: nowrap. ignora los envoltorios y presenta el texto en unw sola linea
+text-shadow: establece la posicion de la sombra. (X  Y  "desenfoque" en px color)| si se repite la misma formula se pueden agregar varias capas
 <!DOCTYPE html>
 <html>
 <body>
