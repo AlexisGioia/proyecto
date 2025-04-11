@@ -344,65 +344,65 @@ FLEXBOX:
 - flex-shrink: permite que un elemento se encoja.
 
 ATRIBUTOS COMUNES:
-- display: flex;
-- position: absolute;
-- top: 10px;
-- z-index: 10;
-- color: rgb(255, 0, 0);
-- background-color: #ffffff;
-- font-size: 16px;
-- text-align: center;
-- text-decoration-line: underline;
-- text-decoration-color: blue;
-- text-decoration-style: dashed;
-- text-decoration-thickness: 2px;
-- text-transform: uppercase;
-- text-indent: 20px;
-- letter-spacing: 1px;
-- line-height: 1.5;
-- word-spacing: 2px;
-- white-space: nowrap;
-- text-shadow: 2px 2px 5px gray;
-- font-family: 'Serif', 'Sans-serif', 'Monospace', 'Cursive', 'Fantasy';
-- font-style: italic;
-- font-weight: bold;
-- font-variant: small-caps;
-- border: 1px solid black;
-- border-color: red;
-- border-radius: 5px;
-- box-shadow: 2px 2px 5px gray;
-- opacity: 0.5;
-- overflow: hidden;
-- visibility: hidden;
-- cursor: pointer;
-- flex-direction: row;
-- flex-wrap: wrap;
-- justify-content: center;
-- align-items: center;
-- align-content: center;
-- order: 1;
-- flex-grow: 1;
-- flex-shrink: 1;
-- flex-basis: 100px;
-- align-self: center;
-- background-image: url('imagen.jpg');
-- background-size: cover;
-- background-repeat: no-repeat;
-- background-position: center;
-- line-break: normal;
-- text-overflow: ellipsis;
-- word-break: break-all;
-- grid-template-columns: 1fr 2fr;
-- grid-template-rows: 100px 200px;
-- grid-column-gap: 10px;
-- grid-row-gap: 10px;
-- grid-area: header;
-- grid-template-areas: "header header" "main sidebar";
-- grid-column: 1 / 3;
-- grid-row: 1 / 2;
-- grid-auto-flow: row;
-- grid-auto-columns: 100px;
-- grid-auto-rows: 100px;
+- display: flex; /* Usado para crear un contenedor flexible, útil en diseños responsivos */
+- position: absolute; /* Posiciona un elemento en relación a su contenedor más cercano, útil para menús emergentes */
+- top: 10px; /* Establece la distancia desde la parte superior, útil para ajustar la posición de elementos */
+- z-index: 10; /* Controla el orden de apilamiento, útil para superponer elementos */
+- color: rgb(255, 0, 0); /* Cambia el color del texto, útil para resaltar información */
+- background-color: #ffffff; /* Cambia el color de fondo, útil para secciones destacadas */
+- font-size: 16px; /* Establece el tamaño de la fuente, útil para la legibilidad */
+- text-align: center; /* Alinea el texto al centro, útil para títulos y encabezados */
+- text-decoration-line: underline; /* Subraya el texto, útil para enlaces */
+- text-decoration-color: blue; /* Establece el color del subrayado, útil para enlaces */
+- text-decoration-style: dashed; /* Establece el estilo del subrayado, útil para destacar texto */
+- text-decoration-thickness: 2px; /* Establece el grosor del subrayado, útil para destacar texto */
+- text-transform: uppercase; /* Convierte el texto a mayúsculas, útil para títulos */
+- text-indent: 20px; /* Crea una sangría, útil para párrafos */
+- letter-spacing: 1px; /* Establece el espaciado entre letras, útil para mejorar la legibilidad */
+- line-height: 1.5; /* Define la altura de la línea, útil para la legibilidad */
+- word-spacing: 2px; /* Establece el espaciado entre palabras, útil para mejorar la legibilidad */
+- white-space: nowrap; /* Evita el salto de línea, útil para botones */
+- text-shadow: 2px 2px 5px gray; /* Agrega sombra al texto, útil para efectos visuales */
+- font-family: 'Serif', 'Sans-serif', 'Monospace', 'Cursive', 'Fantasy'; /* Define la familia de fuentes, útil para el estilo del texto */
+- font-style: italic; /* Aplica estilo itálico, útil para citas */
+- font-weight: bold; /* Establece el grosor de la fuente, útil para destacar texto */
+- font-variant: small-caps; /* Convierte el texto a mayúsculas pequeñas, útil para títulos */
+- border: 1px solid black; /* Establece el borde de un elemento, útil para contenedores */
+- border-color: red; /* Establece el color del borde, útil para destacar elementos */
+- border-radius: 5px; /* Redondea las esquinas de un elemento, útil para botones */
+- box-shadow: 2px 2px 5px gray; /* Agrega sombra a un elemento, útil para efectos visuales */
+- opacity: 0.5; /* Establece la opacidad de un elemento, útil para superposiciones */
+- overflow: hidden; /* Oculta el contenido desbordado, útil para contenedores */
+- visibility: hidden; /* Oculta un elemento, útil para elementos condicionales */
+- cursor: pointer; /* Cambia el cursor al pasar sobre un elemento, útil para botones */
+- flex-direction: row; /* Establece la dirección de los elementos flexibles, útil para menús horizontales */
+- flex-wrap: wrap; /* Permite que los elementos flexibles se envuelvan, útil para diseños responsivos */
+- justify-content: center; /* Alinea los elementos flexibles al centro, útil para centrar contenido */
+- align-items: center; /* Alinea los elementos flexibles al centro, útil para centrar contenido verticalmente */
+- align-content: center; /* Alinea las líneas flexibles al centro, útil para centrar contenido */
+- order: 1; /* Establece el orden de los elementos flexibles, útil para reordenar elementos */
+- flex-grow: 1; /* Permite que un elemento flexible crezca, útil para distribuir espacio */
+- flex-shrink: 1; /* Permite que un elemento flexible se encoja, útil para ajustar a pantallas pequeñas */
+- flex-basis: 100px; /* Establece la base flexible inicial, útil para tamaños iniciales */
+- align-self: center; /* Alinea un elemento flexible individualmente, útil para ajustes específicos */
+- background-image: url('imagen.jpg'); /* Establece una imagen de fondo, útil para fondos personalizados */
+- background-size: cover; /* Ajusta el tamaño de la imagen de fondo, útil para fondos completos */
+- background-repeat: no-repeat; /* Evita que la imagen de fondo se repita, útil para fondos únicos */
+- background-position: center; /* Establece la posición de la imagen de fondo, útil para centrar imágenes */
+- line-break: normal; /* Controla el comportamiento de los saltos de línea, útil para textos largos */
+- text-overflow: ellipsis; /* Muestra puntos suspensivos en texto desbordado, útil para textos truncados */
+- word-break: break-all; /* Controla el comportamiento de las palabras desbordadas, útil para textos largos */
+- grid-template-columns: 1fr 2fr; /* Define el número y tamaño de las columnas en un grid, útil para diseños de cuadrícula */
+- grid-template-rows: 100px 200px; /* Define el número y tamaño de las filas en un grid, útil para diseños de cuadrícula */
+- grid-column-gap: 10px; /* Establece el espacio entre columnas en un grid, útil para separación de elementos */
+- grid-row-gap: 10px; /* Establece el espacio entre filas en un grid, útil para separación de elementos */
+- grid-area: header; /* Define un área dentro de un grid, útil para diseños de cuadrícula */
+- grid-template-areas: "header header" "main sidebar"; /* Define las áreas dentro de un grid, útil para diseños de cuadrícula */
+- grid-column: 1 / 3; /* Define el inicio y fin de una columna en un grid, útil para diseños de cuadrícula */
+- grid-row: 1 / 2; /* Define el inicio y fin de una fila en un grid, útil para diseños de cuadrícula */
+- grid-auto-flow: row; /* Controla el flujo automático de los elementos en un grid, útil para diseños de cuadrícula */
+- grid-auto-columns: 100px; /* Establece el tamaño de las columnas generadas automáticamente en un grid, útil para diseños de cuadrícula */
+- grid-auto-rows: 100px; /* Establece el tamaño de las filas generadas automáticamente en un grid, útil para diseños de cuadrícula */
 <h1>The datalist element</h1>
 
 <form action="/action_page.php" method="get">
