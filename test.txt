@@ -1,4 +1,91 @@
 SELECTORES: los hay de elementos como h1, h3 etc. tambien los hay de identidad que junto a la etiqueta del elemento se pone id ="" y en el documento css se pone un # y el nombre del elemento
+SELECTORES:
+- Elementos: h1, h3, etc.
+- Identidad: id="" en HTML, #nombre en CSS.
+- Clase: class="" en HTML, .nombre en CSS.
+- Combinados: p.rojo selecciona párrafos con clase "rojo".
+- Múltiples clases: class="rojo parrafo-principal".
+- Múltiples elementos: p, h1 { color: red; }
+- Universal: * aplica a todos los elementos.
+
+JERARQUÍA:
+- Se usa el primer estilo declarado.
+- En HTML, se lee de arriba hacia abajo.
+- Estilo en línea tiene prioridad sobre style y CSS externo.
+
+COMENTARIOS:
+- En CSS: /* texto */
+
+BOX MODEL:
+- Elementos HTML son cajas con: contenido, padding, borde y margen.
+- Ancho total depende del elemento padre.
+- Elementos inline ocupan el ancho necesario.
+- Borde se aplica al contenido, a menos que haya padding.
+- Padding crea espacio extra dentro del elemento.
+- Borde rodea el padding.
+- Padding: 4 valores (arriba, derecha, abajo, izquierda).
+- Dimensiones totales: contenido + padding + borde.
+- Margin crea espacio extra fuera del elemento.
+
+FLEXBOX:
+- Flexbox organiza elementos para diseños responsivos.
+- display: block; para que <a> se comporte como bloque.
+- display: flex; para crear un contenedor flex.
+- Elementos hijos se organizan en una fila por defecto.
+- flex-direction: column; para organizar verticalmente.
+- flex-wrap: wrap; para permitir ajuste de elementos.
+- flex-grow: permite que un elemento crezca.
+- flex-shrink: permite que un elemento se encoja.
+
+ATRIBUTOS COMUNES:
+- font-size: 16px;
+- line-break: normal;
+- text-overflow: ellipsis;
+- word-break: break-all;
+- background-image: url('imagen.jpg');
+- background-size: cover;
+- background-repeat: no-repeat;
+- background-position: center;
+- border: 1px solid black;
+- border-color: red;
+- color: rgb(255, 0, 0);
+- background-color: #ffffff;
+- text-align: center;
+- text-decoration-line: underline;
+- text-decoration-color: blue;
+- text-decoration-style: dashed;
+- text-decoration-thickness: 2px;
+- text-transform: uppercase;
+- text-indent: 20px;
+- letter-spacing: 1px;
+- line-height: 1.5;
+- word-spacing: 2px;
+- white-space: nowrap;
+- text-shadow: 2px 2px 5px gray;
+- font-family: 'Serif', 'Sans-serif', 'Monospace', 'Cursive', 'Fantasy';
+- font-style: italic;
+- font-weight: bold;
+- font-variant: small-caps;
+- border-radius: 5px;
+- box-shadow: 2px 2px 5px gray;
+- opacity: 0.5;
+- overflow: hidden;
+- position: absolute;
+- top: 10px;
+- z-index: 10;
+- display: flex;
+- visibility: hidden;
+- cursor: pointer;
+- flex-direction: row;
+- flex-wrap: wrap;
+- justify-content: center;
+- align-items: center;
+- align-content: center;
+- order: 1;
+- flex-grow: 1;
+- flex-shrink: 1;
+- flex-basis: 100px;
+- align-self: center;
 los hay de clase que se pone class ="" y en el documento se hace referencia con . seguidon del nombre de la clase
 tambien se pueden combinar selectores por ejemplo tenemos la clase rojo y varios parrafos p, si escribimos p.rojo seleccionamos los parrafos de la 
 clase rojo y solo esos. ademas se le puede asignar mas de una clase a un elemento dejando un espacio ej: class ="rojo parrafo-principal"(ahora tiene las clases rojo y parradfo principal)
@@ -47,26 +134,275 @@ El valor determina cuánto se reducirá un elemento flexible en relación con el
 
 
 
+ATRIBUTOS UTILES/COMUNES:
+ATRIBUTOS UTILES/COMUNES:
+font-size: establece el tamaño de la fuente. Unidad: px, em, rem, %. Ejemplo: font-size: 16px;
+line-break: controla el comportamiento de los saltos de línea. Valores: auto, loose, normal, strict. Ejemplo: line-break: normal;
+text-overflow: controla cómo se muestra el texto desbordado. Valores: clip, ellipsis. Ejemplo: text-overflow: ellipsis;
+word-break: controla el comportamiento de las palabras desbordadas. Valores: normal, break-all, keep-all. Ejemplo: word-break: break-all;
+background-image: establece una imagen de fondo. Ejemplo: background-image: url('imagen.jpg');
+background-size: establece el tamaño de la imagen de fondo. Valores: auto, cover, contain. Ejemplo: background-size: cover;
+background-repeat: establece cómo se repite la imagen de fondo. Valores: repeat, no-repeat, repeat-x, repeat-y. Ejemplo: background-repeat: no-repeat;
+background-position: establece la posición de la imagen de fondo. Ejemplo: background-position: center;
+border: establece el borde de un elemento. Ejemplo: border: 1px solid black;
+border-color: establece el color del borde. Ejemplo: border-color: red;
+color: cambia el color de los textos. usar rgb para más precisión. Ejemplo: color: rgb(255, 0, 0);
+background-color: cambia el color de fondo. BUENA PRÁCTICA: usar un div para controlar las dimensiones del fondo y no se descontrolen. Ejemplo: background-color: #ffffff;
+text-align: establece la posición del texto. Valores: left, center, right, end, start, justify. Ejemplo: text-align: center;
+text-decoration-line: establece las líneas que subrayan el texto. Valores: overline, line-through, underline, none. Ejemplo: text-decoration-line: underline;
+text-decoration-color: establece el color del subrayado. Ejemplo: text-decoration-color: blue;
+text-decoration-style: establece el estilo del subrayado. Valores: dotted, wavy, solid, dashed, double. Ejemplo: text-decoration-style: dashed;
+text-decoration-thickness: establece el ancho en píxeles. Ejemplo: text-decoration-thickness: 2px;
+text-transform: modifica mayúsculas o minúsculas del texto. Valores: uppercase, lowercase, capitalize, none. Ejemplo: text-transform: uppercase;
+text-indent: crea una sangría. Unidad: px. Ejemplo: text-indent: 20px;
+letter-spacing: separación de letras en px. Ejemplo: letter-spacing: 1px;
+line-height: define la altura de la línea en porcentaje o factor. Ejemplo: line-height: 1.5;
+word-spacing: espaciado de palabras en px. Ejemplo: word-spacing: 2px;
+white-space: controla el manejo de espacios en blanco. Valores: nowrap, pre, pre-line, pre-wrap, normal. Ejemplo: white-space: nowrap;
+text-shadow: establece la posición de la sombra. Formato: (X Y desenfoque en px color). Ejemplo: text-shadow: 2px 2px 5px gray;
+font-family: Existen varias familias de fuentes. Las cinco más conocidas son Serif, Sans-serif, Monospace, Cursive, Fantasy. Al elegir una fuente se pone la preferida y otras opcionales de la misma familia en el caso de que no exista. 
+font-style: se puede poner normal, itálica u oblicua(oblique). Ejemplo: font-style: italic;
+font-weight: grosor en multiplos de 100 o bold, bolder, lighter
+font-variant:crea estilos nuevos de fuentes Ej:small-caps:todo va en mayusculas la primera letra es mas grande que las otras emulando la letra capital
+border-radius: redondea las esquinas de un elemento. Ejemplo: border-radius: 5px;
+box-shadow: agrega sombra a un elemento. Ejemplo: box-shadow: 2px 2px 5px gray;
+opacity: establece la opacidad de un elemento. Valores: 0 (transparente) a 1 (opaco). Ejemplo: opacity: 0.5;
+overflow: controla el contenido desbordado. Valores: visible, hidden, scroll, auto. Ejemplo: overflow: hidden;
+position: establece la posición de un elemento. Valores: static, relative, absolute, fixed, sticky. Ejemplo: position: absolute;
+top, right, bottom, left: establece la posición de un elemento posicionado. Ejemplo: top: 10px;
+z-index: establece el orden de apilamiento de un elemento posicionado. Ejemplo: z-index: 10;
+display: establece el tipo de caja de un elemento. Valores: none, block, inline, inline-block, flex, grid. Ejemplo: display: flex;
+visibility: establece la visibilidad de un elemento. Valores: visible, hidden, collapse. Ejemplo: visibility: hidden;
+cursor: cambia el cursor del ratón cuando se pasa sobre un elemento. Ejemplo: cursor: pointer;
+flex-direction: establece la dirección de los elementos flexibles. Valores: row, row-reverse, column, column-reverse. Ejemplo: flex-direction: row;
+flex-wrap: controla si los elementos flexibles se envuelven. Valores: nowrap, wrap, wrap-reverse. Ejemplo: flex-wrap: wrap;
+justify-content: alinea los elementos flexibles a lo largo del eje principal. Valores: flex-start, flex-end, center, space-between, space-around, space-evenly. Ejemplo: justify-content: center;
+align-items: alinea los elementos flexibles a lo largo del eje transversal. Valores: flex-start, flex-end, center, baseline, stretch. Ejemplo: align-items: center;
+align-content: alinea las líneas flexibles cuando hay espacio extra en el eje transversal. Valores: flex-start, flex-end, center, space-between, space-around, stretch. Ejemplo: align-content: center;
+order: establece el orden de los elementos flexibles. Valores: enteros. Ejemplo: order: 1;
+flex-grow: permite que un elemento flexible crezca en relación con los demás. Valores: enteros. Ejemplo: flex-grow: 1;
+flex-shrink: permite que un elemento flexible se encoja en relación con los demás. Valores: enteros. Ejemplo: flex-shrink: 1;
+flex-basis: establece la base flexible inicial de un elemento. Valores: auto, px, %. Ejemplo: flex-basis: 100px;
+align-self: alinea un elemento flexible a lo largo del eje transversal, sobrescribiendo align-items. Valores: auto, flex-start, flex-end, center, baseline, stretch. Ejemplo: align-self: center;
+grid-template-columns: define el número y tamaño de las columnas en un grid layout. Ejemplo: grid-template-columns: 1fr 2fr;
+grid-template-rows: define el número y tamaño de las filas en un grid layout. Ejemplo: grid-template-rows: 100px 200px;
+grid-column-gap: establece el espacio entre columnas en un grid layout. Ejemplo: grid-column-gap: 10px;
+grid-row-gap: establece el espacio entre filas en un grid layout. Ejemplo: grid-row-gap: 10px;
+grid-area: define un área dentro de un grid layout. Ejemplo: grid-area: header;
+grid-template-areas: define las áreas dentro de un grid layout. Ejemplo: grid-template-areas: "header header" "main sidebar";
+grid-column: define el inicio y fin de una columna en un grid layout. Ejemplo: grid-column: 1 / 3;
+grid-row: define el inicio y fin de una fila en un grid layout. Ejemplo: grid-row: 1 / 2;
+grid-auto-flow: controla el flujo automático de los elementos en un grid layout. Ejemplo: grid-auto-flow: row;
+grid-auto-columns: establece el tamaño de las columnas generadas automáticamente en un grid layout. Ejemplo: grid-auto-columns: 100px;
+grid-auto-rows: establece el tamaño de las filas generadas automáticamente en un grid layout. Ejemplo: grid-auto-rows: 100px;
+font-size: establece el tamaño de la fuente. Unidad: px, em, rem, %. Ejemplo: font-size: 16px;
+line-break: controla el comportamiento de los saltos de línea. Valores: auto, loose, normal, strict. Ejemplo: line-break: normal;
+text-overflow: controla cómo se muestra el texto desbordado. Valores: clip, ellipsis. Ejemplo: text-overflow: ellipsis;
+word-break: controla el comportamiento de las palabras desbordadas. Valores: normal, break-all, keep-all. Ejemplo: word-break: break-all;
+background-image: establece una imagen de fondo. Ejemplo: background-image: url('imagen.jpg');
+background-size: establece el tamaño de la imagen de fondo. Valores: auto, cover, contain. Ejemplo: background-size: cover;
+background-repeat: establece cómo se repite la imagen de fondo. Valores: repeat, no-repeat, repeat-x, repeat-y. Ejemplo: background-repeat: no-repeat;
+background-position: establece la posición de la imagen de fondo. Ejemplo: background-position: center;
+border: establece el borde de un elemento. Ejemplo: border: 1px solid black;
+border-color: establece el color del borde. Ejemplo: border-color: red;
+color: cambia el color de los textos. usar rgb para más precisión. Ejemplo: color: rgb(255, 0, 0);
+background-color: cambia el color de fondo. BUENA PRÁCTICA: usar un div para controlar las dimensiones del fondo y no se descontrolen. Ejemplo: background-color: #ffffff;
+text-align: establece la posición del texto. Valores: left, center, right, end, start, justify. Ejemplo: text-align: center;
+ATRIBUTOS UTILES/COMUNES:
+font-size: establece el tamaño de la fuente. Unidad: px, em, rem, %. Ejemplo: font-size: 16px;
+line-break: controla el comportamiento de los saltos de línea. Valores: auto, loose, normal, strict. Ejemplo: line-break: normal;
+text-overflow: controla cómo se muestra el texto desbordado. Valores: clip, ellipsis. Ejemplo: text-overflow: ellipsis;
+word-break: controla el comportamiento de las palabras desbordadas. Valores: normal, break-all, keep-all. Ejemplo: word-break: break-all;
+background-image: establece una imagen de fondo. Ejemplo: background-image: url('imagen.jpg');
+background-size: establece el tamaño de la imagen de fondo. Valores: auto, cover, contain. Ejemplo: background-size: cover;
+background-repeat: establece cómo se repite la imagen de fondo. Valores: repeat, no-repeat, repeat-x, repeat-y. Ejemplo: background-repeat: no-repeat;
+background-position: establece la posición de la imagen de fondo. Ejemplo: background-position: center;
+border: establece el borde de un elemento. Ejemplo: border: 1px solid black;
+border-color: establece el color del borde. Ejemplo: border-color: red;
+color: cambia el color de los textos. usar rgb para más precisión. Ejemplo: color: rgb(255, 0, 0);
+background-color: cambia el color de fondo. BUENA PRÁCTICA: usar un div para controlar las dimensiones del fondo y no se descontrolen. Ejemplo: background-color: #ffffff;
+text-align: establece la posición del texto. Valores: left, center, right, end, start, justify. Ejemplo: text-align: center;
+text-decoration-line: establece las líneas que subrayan el texto. Valores: overline, line-through, underline, none. Ejemplo: text-decoration-line: underline;
+text-decoration-color: establece el color del subrayado. Ejemplo: text-decoration-color: blue;
+text-decoration-style: establece el estilo del subrayado. Valores: dotted, wavy, solid, dashed, double. Ejemplo: text-decoration-style: dashed;
+text-decoration-thickness: establece el ancho en píxeles. Ejemplo: text-decoration-thickness: 2px;
+text-transform: modifica mayúsculas o minúsculas del texto. Valores: uppercase, lowercase, capitalize, none. Ejemplo: text-transform: uppercase;
+text-indent: crea una sangría. Unidad: px. Ejemplo: text-indent: 20px;
+letter-spacing: separación de letras en px. Ejemplo: letter-spacing: 1px;
+line-height: define la altura de la línea en porcentaje o factor. Ejemplo: line-height: 1.5;
+word-spacing: espaciado de palabras en px. Ejemplo: word-spacing: 2px;
+white-space: controla el manejo de espacios en blanco. Valores: nowrap, pre, pre-line, pre-wrap, normal. Ejemplo: white-space: nowrap;
+text-shadow: establece la posición de la sombra. Formato: (X Y desenfoque en px color). Ejemplo: text-shadow: 2px 2px 5px gray;
+font-family: Existen varias familias de fuentes. Las cinco más conocidas son Serif, Sans-serif, Monospace, Cursive, Fantasy. Al elegir una fuente se pone la preferida y otras opcionales de la misma familia en el caso de que no exista. 
+font-style: se puede poner normal, itálica u oblicua(oblique). Ejemplo: font-style: italic;
+font-weight: grosor en multiplos de 100 o bold, bolder, lighter
+font-variant:crea estilos nuevos de fuentes Ej:small-caps:todo va en mayusculas la primera letra es mas grande que las otras emulando la letra capital
+border-radius: redondea las esquinas de un elemento. Ejemplo: border-radius: 5px;
+box-shadow: agrega sombra a un elemento. Ejemplo: box-shadow: 2px 2px 5px gray;
+opacity: establece la opacidad de un elemento. Valores: 0 (transparente) a 1 (opaco). Ejemplo: opacity: 0.5;
+overflow: controla el contenido desbordado. Valores: visible, hidden, scroll, auto. Ejemplo: overflow: hidden;
+position: establece la posición de un elemento. Valores: static, relative, absolute, fixed, sticky. Ejemplo: position: absolute;
+top, right, bottom, left: establece la posición de un elemento posicionado. Ejemplo: top: 10px;
+z-index: establece el orden de apilamiento de un elemento posicionado. Ejemplo: z-index: 10;
+display: establece el tipo de caja de un elemento. Valores: none, block, inline, inline-block, flex, grid. Ejemplo: display: flex;
+visibility: establece la visibilidad de un elemento. Valores: visible, hidden, collapse. Ejemplo: visibility: hidden;
+cursor: cambia el cursor del ratón cuando se pasa sobre un elemento. Ejemplo: cursor: pointer;
+flex-direction: establece la dirección de los elementos flexibles. Valores: row, row-reverse, column, column-reverse. Ejemplo: flex-direction: row;
+flex-wrap: controla si los elementos flexibles se envuelven. Valores: nowrap, wrap, wrap-reverse. Ejemplo: flex-wrap: wrap;
+justify-content: alinea los elementos flexibles a lo largo del eje principal. Valores: flex-start, flex-end, center, space-between, space-around, space-evenly. Ejemplo: justify-content: center;
+align-items: alinea los elementos flexibles a lo largo del eje transversal. Valores: flex-start, flex-end, center, baseline, stretch. Ejemplo: align-items: center;
+align-content: alinea las líneas flexibles cuando hay espacio extra en el eje transversal. Valores: flex-start, flex-end, center, space-between, space-around, stretch. Ejemplo: align-content: center;
+order: establece el orden de los elementos flexibles. Valores: enteros. Ejemplo: order: 1;
+flex-grow: permite que un elemento flexible crezca en relación con los demás. Valores: enteros. Ejemplo: flex-grow: 1;
+flex-shrink: permite que un elemento flexible se encoja en relación con los demás. Valores: enteros. Ejemplo: flex-shrink: 1;
+flex-basis: establece la base flexible inicial de un elemento. Valores: auto, px, %. Ejemplo: flex-basis: 100px;
+align-self: alinea un elemento flexible a lo largo del eje transversal, sobrescribiendo align-items. Valores: auto, flex-start, flex-end, center, baseline, stretch. Ejemplo: align-self: center;
+grid-template-columns: define el número y tamaño de las columnas en un grid layout. Ejemplo: grid-template-columns: 1fr 2fr;
+grid-template-rows: define el número y tamaño de las filas en un grid layout. Ejemplo: grid-template-rows: 100px 200px;
+grid-column-gap: establece el espacio entre columnas en un grid layout. Ejemplo: grid-column-gap: 10px;
+grid-row-gap: establece el espacio entre filas en un grid layout. Ejemplo: grid-row-gap: 10px;
+grid-area: define un área dentro de un grid layout. Ejemplo: grid-area: header;
+grid-template-areas: define las áreas dentro de un grid layout. Ejemplo: grid-template-areas: "header header" "main sidebar";
+grid-column: define el inicio y fin de una columna en un grid layout. Ejemplo: grid-column: 1 / 3;
+grid-row: define el inicio y fin de una fila en un grid layout. Ejemplo: grid-row: 1 / 2;
+grid-auto-flow: controla el flujo automático de los elementos en un grid layout. Ejemplo: grid-auto-flow: row;
+grid-auto-columns: establece el tamaño de las columnas generadas automáticamente en un grid layout. Ejemplo: grid-auto-columns: 100px;
+grid-auto-rows: establece el tamaño de las filas generadas automáticamente en un grid layout. Ejemplo: grid-auto-rows: 100px;
+text-decoration-line: establece las líneas que subrayan el texto. Valores: overline, line-through, underline, none. Ejemplo: text-decoration-line: underline;
+text-decoration-color: establece el color del subrayado. Ejemplo: text-decoration-color: blue;
+text-decoration-style: establece el estilo del subrayado. Valores: dotted, wavy, solid, dashed, double. Ejemplo: text-decoration-style: dashed;
+text-decoration-thickness: establece el ancho en píxeles. Ejemplo: text-decoration-thickness: 2px;
+text-transform: modifica mayúsculas o minúsculas del texto. Valores: uppercase, lowercase, capitalize, none. Ejemplo: text-transform: uppercase;
+text-indent: crea una sangría. Unidad: px. Ejemplo: text-indent: 20px;
+letter-spacing: separación de letras en px. Ejemplo: letter-spacing: 1px;
+line-height: define la altura de la línea en porcentaje o factor. Ejemplo: line-height: 1.5;
+word-spacing: espaciado de palabras en px. Ejemplo: word-spacing: 2px;
+white-space: controla el manejo de espacios en blanco. Valores: nowrap, pre, pre-line, pre-wrap, normal. Ejemplo: white-space: nowrap;
+text-shadow: establece la posición de la sombra. Formato: (X Y desenfoque en px color). Ejemplo: text-shadow: 2px 2px 5px gray;
+font-family: Existen varias familias de fuentes. Las cinco más conocidas son Serif, Sans-serif, Monospace, Cursive, Fantasy. Al elegir una fuente se pone la preferida y otras opcionales de la misma familia en el caso de que no exista. 
+font-style: se puede poner normal, itálica u oblicua(oblique). Ejemplo: font-style: italic;
+font-weight: grosor en multiplos de 100 o bold, bolder, lighter
+font-variant:crea estilos nuevos de fuentes Ej:small-caps:todo va en mayusculas la primera letra es mas grande que las otras emulando la letra capital
+border-radius: redondea las esquinas de un elemento. Ejemplo: border-radius: 5px;
+box-shadow: agrega sombra a un elemento. Ejemplo: box-shadow: 2px 2px 5px gray;
+opacity: establece la opacidad de un elemento. Valores: 0 (transparente) a 1 (opaco). Ejemplo: opacity: 0.5;
+overflow: controla el contenido desbordado. Valores: visible, hidden, scroll, auto. Ejemplo: overflow: hidden;
+position: establece la posición de un elemento. Valores: static, relative, absolute, fixed, sticky. Ejemplo: position: absolute;
+top, right, bottom, left: establece la posición de un elemento posicionado. Ejemplo: top: 10px;
+z-index: establece el orden de apilamiento de un elemento posicionado. Ejemplo: z-index: 10;
+display: establece el tipo de caja de un elemento. Valores: none, block, inline, inline-block, flex, grid. Ejemplo: display: flex;
+visibility: establece la visibilidad de un elemento. Valores: visible, hidden, collapse. Ejemplo: visibility: hidden;
+cursor: cambia el cursor del ratón cuando se pasa sobre un elemento. Ejemplo: cursor: pointer;
+flex-direction: establece la dirección de los elementos flexibles. Valores: row, row-reverse, column, column-reverse. Ejemplo: flex-direction: row;
+flex-wrap: controla si los elementos flexibles se envuelven. Valores: nowrap, wrap, wrap-reverse. Ejemplo: flex-wrap: wrap;
+justify-content: alinea los elementos flexibles a lo largo del eje principal. Valores: flex-start, flex-end, center, space-between, space-around, space-evenly. Ejemplo: justify-content: center;
+align-items: alinea los elementos flexibles a lo largo del eje transversal. Valores: flex-start, flex-end, center, baseline, stretch. Ejemplo: align-items: center;
+align-content: alinea las líneas flexibles cuando hay espacio extra en el eje transversal. Valores: flex-start, flex-end, center, space-between, space-around, stretch. Ejemplo: align-content: center;
+order: establece el orden de los elementos flexibles. Valores: enteros. Ejemplo: order: 1;
+flex-grow: permite que un elemento flexible crezca en relación con los demás. Valores: enteros. Ejemplo: flex-grow: 1;
+flex-shrink: permite que un elemento flexible se encoja en relación con los demás. Valores: enteros. Ejemplo: flex-shrink: 1;
+flex-basis: establece la base flexible inicial de un elemento. Valores: auto, px, %. Ejemplo: flex-basis: 100px;
+align-self: alinea un elemento flexible a lo largo del eje transversal, sobrescribiendo align-items. Valores: auto, flex-start, flex-end, center, baseline, stretch. Ejemplo: align-self: center;
 
-ATRUBUTOS UTILES/COMUNES:
-color: cambia el color de los textos. usar rgb para mas presicion
-background-color: cambia el color de fondo|BUENA PRACTICA: usar un div para controlar las dimensiones del fondo y no se descontrolen
-text-align: establece la posicion del texto. left, center, right, end, start, justify
-text-decoration-line: establece las lineas que subrayan el texto: overline, line-trought,underline, none(anula)| se agrega un segundk argumento con un espacio para combinar 2 estilos diferentes y ademas se pueden usar los argumentos de los metodos de abajo
-text-decoration-color: establece el color del subrayado
-text-decoration-style: establece el estilo del subrayado. dotted ,wawy, solid dashed doble
-text-decoration-thickness: establece el ancho en pixeles
-text-transform: modifica mayusculas o minusculas del texto. Uppercase, Lowercase, Capitalize, None
-text-indent:crea una sangría. PX
-letter-spacing: separacion de letras en PX
-line-height: define la altura de la linea en porcentaje de factor
-word-spacing: espaciado de palabras en PX
-white-space: nowrap. ignora los envoltorios y presenta el texto en unw sola linea
-text-shadow: establece la posicion de la sombra. (X  Y  "desenfoque" en px color)| si se repite la misma formula se pueden agregar varias capas
-<!DOCTYPE html>
-<html>
-<body>
 
+SELECTORES:
+- Elementos: h1, h3, etc.
+- Identidad: id="" en HTML, #nombre en CSS.
+- Clase: class="" en HTML, .nombre en CSS.
+- Combinados: p.rojo selecciona párrafos con clase "rojo".
+- Múltiples clases: class="rojo parrafo-principal".
+- Múltiples elementos: p, h1 { color: red; }
+- Universal: * aplica a todos los elementos.
+
+JERARQUÍA:
+- Se usa el primer estilo declarado.
+- En HTML, se lee de arriba hacia abajo.
+- Estilo en línea tiene prioridad sobre style y CSS externo.
+
+COMENTARIOS:
+- En CSS: /* texto */
+
+BOX MODEL:
+- Elementos HTML son cajas con: contenido, padding, borde y margen.
+- Ancho total depende del elemento padre.
+- Elementos inline ocupan el ancho necesario.
+- Borde se aplica al contenido, a menos que haya padding.
+- Padding crea espacio extra dentro del elemento.
+- Borde rodea el padding.
+- Padding: 4 valores (arriba, derecha, abajo, izquierda).
+- Dimensiones totales: contenido + padding + borde.
+- Margin crea espacio extra fuera del elemento.
+
+FLEXBOX:
+- Flexbox organiza elementos para diseños responsivos.
+- display: block; para que <a> se comporte como bloque.
+- display: flex; para crear un contenedor flex.
+- Elementos hijos se organizan en una fila por defecto.
+- flex-direction: column; para organizar verticalmente.
+- flex-wrap: wrap; para permitir ajuste de elementos.
+- flex-grow: permite que un elemento crezca.
+- flex-shrink: permite que un elemento se encoja.
+
+ATRIBUTOS COMUNES:
+- display: flex;
+- position: absolute;
+- top: 10px;
+- z-index: 10;
+- color: rgb(255, 0, 0);
+- background-color: #ffffff;
+- font-size: 16px;
+- text-align: center;
+- text-decoration-line: underline;
+- text-decoration-color: blue;
+- text-decoration-style: dashed;
+- text-decoration-thickness: 2px;
+- text-transform: uppercase;
+- text-indent: 20px;
+- letter-spacing: 1px;
+- line-height: 1.5;
+- word-spacing: 2px;
+- white-space: nowrap;
+- text-shadow: 2px 2px 5px gray;
+- font-family: 'Serif', 'Sans-serif', 'Monospace', 'Cursive', 'Fantasy';
+- font-style: italic;
+- font-weight: bold;
+- font-variant: small-caps;
+- border: 1px solid black;
+- border-color: red;
+- border-radius: 5px;
+- box-shadow: 2px 2px 5px gray;
+- opacity: 0.5;
+- overflow: hidden;
+- visibility: hidden;
+- cursor: pointer;
+- flex-direction: row;
+- flex-wrap: wrap;
+- justify-content: center;
+- align-items: center;
+- align-content: center;
+- order: 1;
+- flex-grow: 1;
+- flex-shrink: 1;
+- flex-basis: 100px;
+- align-self: center;
+- background-image: url('imagen.jpg');
+- background-size: cover;
+- background-repeat: no-repeat;
+- background-position: center;
+- line-break: normal;
+- text-overflow: ellipsis;
+- word-break: break-all;
+- grid-template-columns: 1fr 2fr;
+- grid-template-rows: 100px 200px;
+- grid-column-gap: 10px;
+- grid-row-gap: 10px;
+- grid-area: header;
+- grid-template-areas: "header header" "main sidebar";
+- grid-column: 1 / 3;
+- grid-row: 1 / 2;
+- grid-auto-flow: row;
+- grid-auto-columns: 100px;
+- grid-auto-rows: 100px;
 <h1>The datalist element</h1>
 
 <form action="/action_page.php" method="get">

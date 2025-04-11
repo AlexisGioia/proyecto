@@ -43,3 +43,18 @@ div{
     background-color:rosybrown;
 }
 
+#serif{
+    font-family:'Times New Roman', Times, serif;
+}
+#sans-serif{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#monospace{
+    font-family:Courier New, Courier, monospace;
+}
+#cursive{
+    font-family: "lucida handwriting",cursive;
+}
+#fantasy{
+    font-family:copperplate,fantasy;
+}
