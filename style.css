@@ -16,6 +16,9 @@ h5{
 }
 */
 
+
+
+/*
 div{
     width: 150px;
     height: 70px;
@@ -57,4 +60,8 @@ div{
 }
 #fantasy{
     font-family:copperplate,fantasy;
+} */
+
+.des {
+    list-style-type: circle;
 }

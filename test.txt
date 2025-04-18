@@ -37,6 +37,13 @@ FLEXBOX:
 - flex-grow: permite que un elemento crezca.
 - flex-shrink: permite que un elemento se encoja.
 
+FUENTES DE TERCEROS: se copia el link y se lo pone dentro del head en HTML con la etiqueta link. Ejemplo:
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+Luego, se puede usar la fuente en CSS con la propiedad font-family. Ejemplo:
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 ATRIBUTOS COMUNES:
 - font-size: 16px;
 - line-break: normal;
