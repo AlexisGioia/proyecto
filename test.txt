@@ -63,6 +63,8 @@ Ancho y Alto (width, height)
 - Unidades: px, %, em, vw, vh.  
 - Uso común: ajustar bloques, imágenes o contenedores en diseños fijos o responsivos.
 
+-- max-width: establece el ancho maximo ademas si se reduce la pantalla se achica tambien
+   uso: se puefe usar para adaptar la web a moviles de diferentes tamaños, ya que se redimensiona en tiempo real
 Margen (margin)
 
 - Uso: espacio externo que separa la caja de otros elementos.  
@@ -107,6 +109,8 @@ Contorno (outline)
   `
 - Propiedad extra: outline-offset separa el contorno de la caja.  
 - Uso común: resaltar inputs en foco (:focus), mejorar accesibilidad.
+
+Box-sizing: content-box, border box: calcula el tamaño de la caja solo el contenido o tambien incluido el padding
 
 ---
 
@@ -230,7 +234,7 @@ Display
 - Sintaxis:
   `css
   display: block;
-  display: inline-block;
+  display: inline-block te permite hacer elementos en linea pero que se pueda modificar ancho y alto;
   display: flex;
   display: grid;
   display: none;
@@ -262,10 +266,10 @@ Position
 - Uso: controla el método de posicionamiento de un elemento.  
 - Sintaxis:
   `css
-  position: relative;
-  position: absolute;
-  position: fixed;
-  position: sticky;
+  position: relative(similar al fixed excepto que se guarda el espqcio del item en el flujo de informqcion;
+  position: absolute(deja el item "clavado" en un lugar;
+  position: fixed(deja al item clavado en un lugar y ademas si sw hace scroll lo sigue;
+  position: sticky(una vez que se hace scroll y el item esta por irse de la visra del usuario, este se pone en un mismo lugar;
   top: 20px; left: 10px;
   `
 - Valores:
@@ -274,7 +278,7 @@ Position
 
 Z-Index
 
-- Uso: controla el orden de apilamiento en el eje Z.  
+- Uso: controla el orden de apilamiento en el eje Z. se usa con cualquier position que no sea static.  
 - Sintaxis:
   `css
   z-index: 10;
@@ -287,12 +291,16 @@ Overflow
 - Sintaxis:
   `css
   overflow: visible;
-  overflow: hidden;
-  overflow: scroll;
-  overflow-x: auto;
+  overflow: hidden oculta el contenido que excede el area
+  overflow: scroll crea scrolls, X e Y
+  overflow-x: auto igual que scroll pero decide automaricamenre si poner un eje o no
   `
+- overflow-wrap: corta las palabras si se exede el area.
 - Uso común: activar scroll, ocultar desbordes no deseados.
+Float
 
+- Uso: cambia el comportamiento de cosas flotantes anidadas dentro de un P
+- Sintaxis: float: left, right
 Display Inline-Block
 
 - Uso: combina características inline y block.  
@@ -443,7 +451,7 @@ Animaciones
   `
 - Uso común: loaders, entradas de secciones, feedback visual.
 
----
+--------------
 
 CSS Cheat Sheet Ultra-Compact
 
@@ -455,8 +463,10 @@ Una guía superconcentrada con shorthand y atributos imprescindibles para escrib
 
 - box-sizing  
   `css
-  box-sizing: border-box;
+  box-sizing: border-box,content box;
   `
+  --Si a nuestra propiedad box-sizing le asignamos el valor de border-box, el ancho y alto que indiquemos tomará en cuenta no solo el contenido del elemento, sino también el padding y el borde, dejando solo el margen por fuera
+
 
 - margin / padding  
   shorthand — arriba, derecha, abajo, izquierda  
