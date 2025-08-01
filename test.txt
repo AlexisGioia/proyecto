@@ -270,7 +270,7 @@ Position
   position: absolute(deja el item "clavado" en un lugar;
   position: fixed(deja al item clavado en un lugar y ademas si sw hace scroll lo sigue;
   position: sticky(una vez que se hace scroll y el item esta por irse de la visra del usuario, este se pone en un mismo lugar;
-  top: 20px; left: 10px;
+  luego se usa top: 20px; left: 10px; etc para poder modificar la posicion
   `
 - Valores:
   - static (por defecto), relative, absolute, fixed, sticky.  
@@ -627,4 +627,5 @@ Una guía superconcentrada con shorthand y atributos imprescindibles para escrib
   `
 
 ---
+
 
