@@ -312,6 +312,9 @@ Display Inline-Block
 
 Alineación de Elementos
 
+-Centrar un div: margin: auto; se va solo al centro
+--float:right,left; alinea a la izquierda o derecha
+
 - Texto: text-align: center;  
 - Flexbox:
   `css
@@ -331,10 +334,11 @@ Alineación de Elementos
 
 Combinadores de Selección
 
-- Descendiente: div p { … }  
-- Hijo directo: ul > li { … }  
+- Descendiente(espacio): div p { … } aplica una propiedad a todos los descendientes, hijos nietos
+- Hijo directo: ul > li { … }  aplica una propiedad solo al hijo 
 - Hermano adyacente: h1 + p { … }  
-- Hermanos generales: nav ~ a { … }  
+aplica una propiedad solo al primer hermano entre el elemento declarado ( en jerarquia)
+- Hermanos generales: nav ~ a { … } aplica a todos los hermanos del elemento(en jerarquia) 
 - Uso común: aplicar estilos basados en jerarquía y relaciones de HTML.
 
 Pseudoclases
@@ -627,5 +631,4 @@ Una guía superconcentrada con shorthand y atributos imprescindibles para escrib
   `
 
 ---
-
 
