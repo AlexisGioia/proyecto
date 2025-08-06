@@ -336,13 +336,12 @@ Combinadores de Selección
 
 - Descendiente(espacio): div p { … } aplica una propiedad a todos los descendientes, hijos nietos
 - Hijo directo: ul > li { … }  aplica una propiedad solo al hijo 
-- Hermano adyacente: h1 + p { … }  
-aplica una propiedad solo al primer hermano entre el elemento declarado ( en jerarquia)
+- Hermano adyacente: h1 + p { … }  aplica una propiedad solo al primer hermano entre el elemento declarado ( en jerarquia)
 - Hermanos generales: nav ~ a { … } aplica a todos los hermanos del elemento(en jerarquia) 
 - Uso común: aplicar estilos basados en jerarquía y relaciones de HTML.
 
 Pseudoclases
-
+-llama como a funciones especificas de cada elemento
 - Ejemplos:  
   `css
   a:hover { color: red; }
@@ -352,8 +351,8 @@ Pseudoclases
 - Uso común: estados de interacción, selección de elementos por posición.
 
 Pseudoelementos
-
-- Ejemplos:  
+-permite seleccionar una parte de un elemento
+- Sintaxis: selector::pseudoelemento  
   `css
   p::first-letter { font-size: 2em; }
   div::before { content: '★'; }
@@ -363,7 +362,7 @@ Pseudoelementos
 Opacidad (opacity)
 
 - Uso: controla la transparencia del elemento.  
-- Sintaxis:
+- Sintaxis: opacity:0-1;
   `css
   opacity: 0.5;
   `
@@ -372,7 +371,7 @@ Opacidad (opacity)
 Selector por Atributos
 
 - Uso: seleccionar elementos según atributos HTML.  
-- Sintaxis:
+- Sintaxis: selector[atributo]{}
   `css
   input[type="text"] { … }
   a[href^="https"] { … }
