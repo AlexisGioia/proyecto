@@ -28,14 +28,19 @@ BOX MODEL:
 - Margin crea espacio extra fuera del elemento.
 
 FLEXBOX:
-- Flexbox organiza elementos para diseños responsivos.
+- Flexbox organiza elementos para diseños responsivos. por defecto ajusta el tamaño de los elementos al tamaño del contenedor
 - display: block; para que <a> se comporte como bloque.
 - display: flex; para crear un contenedor flex.
 - Elementos hijos se organizan en una fila por defecto.
-- flex-direction: column; para organizar verticalmente.
-- flex-wrap: wrap; para permitir ajuste de elementos.
-- flex-grow: permite que un elemento crezca.
-- flex-shrink: permite que un elemento se encoja.
+- flex-direction: define el eje principal (row, column, row-reverse, column-reverse). el cross axis sera perpendicular
+- flex-wrap: wrap; para permitir a los elementos envolverse en varias líneas.S
+- flex-grow: permite que un elemento crezca. usando el espacio libre compartido con otros elementos, 1= 100% de espacio disponible
+- flex-shrink: permite que un elemento se encoja. en factor de 1 
+-justify-content: alinea elementos en el eje principal (flex-start, flex-end, center, space-between, space-around).
+-align-items:funciona con no wrap. alinea elementos en el eje transversal (flex-start, flex-end, center, baseline, stretch).
+align-content:funciona con wrap. alinea en el cross axis cuando los contenedores incluyen varias lineas este evita dejar espacios vacios (flex-start, flex-end, center, baseline, stretch).
+-order: en indice. valor positivo: va al final de la caja, valor negativo:va al principio
+-align-self:alinea el item ignorando alineamientos del padre (flex-start, flex-end, center, space-between, space-around)
 
 FUENTES DE TERCEROS: se copia el link y se lo pone dentro del head en HTML con la etiqueta link. Ejemplo:
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -341,7 +346,8 @@ Combinadores de Selección
 - Uso común: aplicar estilos basados en jerarquía y relaciones de HTML.
 
 Pseudoclases
--llama como a funciones especificas de cada elemento
+
+-llama como a funciones especificas de cada elemento
 - Ejemplos:  
   `css
   a:hover { color: red; }
@@ -351,7 +357,8 @@ Pseudoclases
 - Uso común: estados de interacción, selección de elementos por posición.
 
 Pseudoelementos
--permite seleccionar una parte de un elemento
+
+-permite seleccionar una parte de un elemento
 - Sintaxis: selector::pseudoelemento  
   `css
   p::first-letter { font-size: 2em; }
@@ -372,23 +379,27 @@ Selector por Atributos
 
 - Uso: seleccionar elementos según atributos HTML.  
 - Sintaxis: selector[atributo]{}
+- Sintaxis:selector[atributo~="valor"] para seleccionar elementos que contengan un valor específico en un atributo.
+- Sintaxis:selector[atributo*="va"] para seleccionar elementos con un valor de atributo que contenga "va".
+
   `css
   input[type="text"] { … }
   a[href^="https"] { … }
   `
 - Uso común: formularios, enlaces externos, estados personalizados.
-
+-- ademas se puede seleccionar solo el [atributo].
 Unidades de Medida
 
 Unidad  Representa  Uso común
-px  píxeles  tamaños fijos
-%  porcentaje de contenedor  layouts fluidos
-em/rem  relativa al tamaño de fuente  tipografía escalable
-vw/vh  porcentaje del viewport  diseños a pantalla completa
-fr  fracción de espacio en Grid  distribución de columnas/filas
+px  píxeles  tamaños fijos -absoluta
+%  porcentaje de contenedor  layouts fluidos -relativa
+em  -relativa al tamaño de fuente  tipografía escalable. 1 em = tamaño fuente del elemento padre, se multiplica el em por el tamanio de fuente en px 1.5 em a 16 px = 24 px
+rem se basa en el tamaño de fuente raiz lo que la hace mas predecible -relativa. rem 1.5 multiplica el tamaño de la ventana en 1.5
+vw/vh  porcentaje del ancho/alto del viewport(ventana) del navegador. 50vh = 50% del alto de la ventana, 100vw = 100% del ancho de la ventana.
+vmin/vmax  representan el tamaño mínimo o máximo entre el ancho y alto del viewport
 
 Especificidad y !important
-
+- Especificidad: Jerarquicamente los id van por encima de todo, luego clase y luego el atributo de elemento
 - Conflicto de reglas:
   `css
   p { color: black; }
