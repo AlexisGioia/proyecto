@@ -431,10 +431,11 @@ Grid
 - Uso común: diseños de dashboard, galería compleja, estructuras de varias columnas y filas.
 
 Media Queries
-
+-se usa media screen and
+(operqcion){se sobreescriben las declaraciones aca}
 - Sintaxis:
   `css
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     body { font-size: 14px; }
   }
   `
@@ -443,6 +444,7 @@ Media Queries
 Transiciones
 
 - Sintaxis:
+-- para ajustar velocidad se usa transition-timing-function: ease,ease-in,ease-out, ease-in-out.
   `css
   button {
     transition: background 0.3s ease;
@@ -451,14 +453,24 @@ Transiciones
 - Uso común: suavizar cambios en hover, focus o cambios de clase.
 
 Animaciones
+-Sintaxis: se define un nombre de animacion a eleccion, luego con keyframe se programa.
+-- animation: animacion tiempo curva infinite
 
+.elemento {
+    animation: fadeIn 1s ease-in-out;
+  }
 - Definición:
   `css
   @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
-
+  tambien se puede usar:
+ @keyframes fadeIn {
+    0% { opacity: 0; }
+    50%   { opacity: 0.5; }
+    100%  { opacity: 1; }
+  }
   .elemento {
     animation: fadeIn 1s ease-in-out;
   }
