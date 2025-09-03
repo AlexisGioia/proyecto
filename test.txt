@@ -1,3 +1,5 @@
+para subir paginas web netify
+
 SELECTORES: los hay de elementos como h1, h3 etc. tambien los hay de identidad que junto a la etiqueta del elemento se pone id ="" y en el documento css se pone un # y el nombre del elemento
 SELECTORES:
 - Elementos: h1, h3, etc.
