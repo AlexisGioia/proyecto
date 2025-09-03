@@ -43,6 +43,30 @@ FLEXBOX:
 align-content:funciona con wrap. alinea en el cross axis cuando los contenedores incluyen varias lineas este evita dejar espacios vacios (flex-start, flex-end, center, baseline, stretch).
 -order: en indice. valor positivo: va al final de la caja, valor negativo:va al principio
 -align-self:alinea el item ignorando alineamientos del padre (flex-start, flex-end, center, space-between, space-around)
+GRID (Diseño en dos dimensiones)
+display: grid; activa el modo grid en el contenedor.
+
+grid-template-columns: define columnas → grid-template-columns: 1fr 2fr 1fr;.
+
+grid-template-rows: define filas → grid-template-rows: auto 100px 1fr;.
+
+grid-template-areas: define zonas nombradas → se usa junto con grid-area.
+
+grid-area: asigna un ítem a una zona → grid-area: header;.
+
+grid-column: define posición horizontal → grid-column: 1 / span 2;.
+
+grid-row: define posición vertical → grid-row: 2 / 4;.
+
+gap: define espacio entre filas y columnas → gap: 10px 20px; (fila, columna).
+
+grid: shorthand → grid: auto-flow / 1fr 2fr; (flujo automático + columnas).
+
+place-items: alinea horizontal y verticalmente → place-items: center;.
+
+justify-items: alinea horizontalmente cada ítem → justify-items: start;.
+
+align-items: alinea verticalmente cada ítem → align-items: stretch;.
 
 FUENTES DE TERCEROS: se copia el link y se lo pone dentro del head en HTML con la etiqueta link. Ejemplo:
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -478,181 +502,3 @@ Animaciones
   }
   `
 - Uso común: loaders, entradas de secciones, feedback visual.
-
---------------
-
-CSS Cheat Sheet Ultra-Compact
-
-Una guía superconcentrada con shorthand y atributos imprescindibles para escribir CSS eficiente.  
-
----
-
-1. Box Model y Layout
-
-- box-sizing  
-  `css
-  box-sizing: border-box,content box;
-  `
-  --Si a nuestra propiedad box-sizing le asignamos el valor de border-box, el ancho y alto que indiquemos tomará en cuenta no solo el contenido del elemento, sino también el padding y el borde, dejando solo el margen por fuera
-
-
-- margin / padding  
-  shorthand — arriba, derecha, abajo, izquierda  
-  `css
-  margin: 10px 20px;      / 10 | 20 | 10 | 20 /
-  padding: 5px;           / mismo en los cuatro lados /
-  `
-
-- border  
-  `css
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,.3);
-  `
-
-- background  
-  `css
-  background: #fff url(img.jpg) no-repeat center/cover;
-  `
-
-- overflow  
-  `css
-  overflow: hidden;       / x/y juntos /
-  overflow-x: auto;       / scroll horizontal /
-  `
-
-- display  
-  `css
-  display: block|inline|inline-block|flex|grid|none;
-  `
-
-- visibility & opacity  
-  `css
-  visibility: hidden;
-  opacity: .5;
-  `
-
----
-
-2. Tipografía y Texto
-
-- font  
-  shorthand completo:  
-  `css
-  font: italic small-caps bold 16px/1.5 'Open Sans', sans-serif;
-  `
-
-- color  
-  `css
-  color: #f60;            / hex, rgb(), hsl()… /
-  `
-
-- text-decoration  
-  `css
-  text-decoration: underline dashed blue 2px;
-  `
-
-- text-align / transform / indent  
-  `css
-  text-align: center;
-  text-transform: uppercase;
-  text-indent: 2em;
-  `
-
-- spacing  
-  `css
-  letter-spacing: .5px;
-  word-spacing: 4px;
-  line-height: 1.4;
-  `
-
-- overflow & wrapping  
-  `css
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  word-break: break-all;
-  `
-
-- shadow  
-  `css
-  text-shadow: 1px 1px 2px rgba(0,0,0,.4);
-  `
-
----
-
-3. Posicionamiento
-
-- position + offsets  
-  `css
-  position: absolute; 
-  top: 10px; right: 0; 
-  `
-
-- z-index  
-  `css
-  z-index: 10;
-  `
-
-- cursor  
-  `css
-  cursor: pointer;
-  `
-
----
-
-4. Flexbox
-
-- flex container  
-  `css
-  display: flex;
-  flex-flow: row wrap;             / direccion + wrap /
-  justify-content: space-between;
-  align-items: center;
-  align-content: flex-start;
-  `
-
-- flex item  
-  `css
-  flex: 1 1 auto;                  / grow shrink basis /
-  order: 2;
-  align-self: stretch;
-  `
-
----
-
-5. Grid
-
-- grid container  
-  `css
-  display: grid;
-  grid: auto-flow / 1fr 2fr;       / filas auto + columnas/
-  gap: 10px 20px;                  / row-gap column-gap /
-  `
-
-- grid item  
-  `css
-  grid-area: header;               / usa template-areas /
-  grid-column: 1 / span 2;
-  grid-row: 2 / 3;
-  `
-
----
-
-6. Transiciones y Animaciones
-
-- transition  
-  `css
-  transition: all .3s ease-in-out;
-  `
-
-- animation  
-  `css
-  animation: fade-in 1s ease 0s 1 both;
-  @keyframes fade-in {
-    from { opacity: 0; } 
-    to   { opacity: 1; }
-  }
-  `
-
----
-
