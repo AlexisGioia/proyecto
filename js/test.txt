@@ -15,3 +15,9 @@ switch (expresion) {
 }
 estructuras:
 while vs do while: while primero verifica la variable luego ejecuta el bucle, por el contrario do while primero ejecuta y luego verifica el bucle
+let j = 0;
+
+do {
+  console.log("do while:", j);
+  j++;
+} while (j < 3);
