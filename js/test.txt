@@ -13,3 +13,5 @@ switch (expresion) {
     // Código si ningún case coincide
     break;
 }
+estructuras:
+while vs do while: while primero verifica la variable luego ejecuta el bucle, por el contrario do while primero ejecuta y luego verifica el bucle
