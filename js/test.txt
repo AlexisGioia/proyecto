@@ -1,1 +1,15 @@
 var es global, es propenso a errores, mejor usar let que tiene alcance de bloque
+switch se usa asi:
+switch (expresion) {
+  case valor1:
+    // Código si expresion === valor1
+    break;
+
+  case valor2:
+    // Código si expresion === valor2
+    break;
+
+  default:
+    // Código si ningún case coincide
+    break;
+}
