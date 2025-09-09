@@ -38,3 +38,6 @@ str.slice() // corta la cadena, inicio fin o con valores negativos, cuenta desde
 str.trim() quita espacios del comienzo y final
 str.split(separador) // parte la cadena y la devuelve en un array
 str.replace(A,B // busca A en el string y lo reemplaza por B
+
+crear objetos:
+para crear un objeto primero se lo asigna a una variable. luego se lo encierra entre ,{} añadiendo adentro propiedades al estiolo propiedad:valor separado por comas
