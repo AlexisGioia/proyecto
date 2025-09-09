@@ -31,3 +31,10 @@ array.join(separador) // une todos los items en un string separados con un separ
 array.indexOf(contenido) // busca un item con el contenido y devuelve un indice
 array.lastIndexOf(contenido) // igual que indexif solo que funciona a la inversa. comienza por el final del arreglo 
 array.includes(contenido) // devuelve un booleano al buscar en el array
+metodos de strings:
+str.lenght // devuelve el largo
+str.indexOf(contenido) // busca una cadena y devuelve el índice donde lo encontro
+str.slice() // corta la cadena, inicio fin o con valores negativos, cuenta desde atra a delante
+str.trim() quita espacios del comienzo y final
+str.split(separador) // parte la cadena y la devuelve en un array
+str.replace(A,B // busca A en el string y lo reemplaza por B
