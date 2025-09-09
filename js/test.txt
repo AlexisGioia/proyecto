@@ -29,3 +29,4 @@ array.shift() // elimina el primer item de un array
 array.unshift() añade uno o varios items al principio del array separados por comas. retorna la longitud nueva.
 array.join(separador) // une todos los items en un string separados con un separador.
 array.indexOf(contenido) // busca un item con el contenido y devuelve un indice
+array.lastIndexOf(contenido) // igual que indexif solo que funciona a la inversa. comienza por el final del arreglo 
