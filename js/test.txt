@@ -49,4 +49,7 @@ para modificarla simplemente es objeto.propiedad = propiedad_modificada;
 para eliminar una propiedad se usa:
 delete objeto.propiedad;
 
-crear un método 
+crear un método:
+es igual a crear una propiedad solo que con funciones. queda asi:
+propiedad: function(){}
+para llamarlo es igual que para obtener una propiedad 
