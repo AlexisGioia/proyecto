@@ -21,3 +21,11 @@ do {
   console.log("do while:", j);
   j++;
 } while (j < 3);
+
+metodos de arrays:
+push() // le agrega al final uno o varios items separados por comas a un array
+pop()// elimina el último item del array, devuelve el mismo elemento eliminado 
+array.shift() // elimina el primer item de un array
+array.unshift() añade uno o varios items al principio del array separados por comas. retorna la longitud nueva.
+array.join(separador) // une todos los items en un string separados con un separador.
+array.indexOf(contenido) // busca un item con el contenido y devuelve un indice
