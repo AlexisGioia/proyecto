@@ -65,4 +65,5 @@ respirar("aire",inhalar)// inhalar es una función que tiene parámetros de el g
 
 metodos de arrays:
 slice(inicio,fin): corta el array a partir y hacia donde se indica.
-splice(inicio,cant. elem. a elim.,"elemento1", elemento2..) combina el contenido de un array eliminando elementos existentes a partir del inicio o agregando nuevos elementos en su lugar 
+splice(inicio,cant. elem. a elim.,"elemento1", elemento2..) combina el contenido de un array eliminando elementos existentes a partir del inicio o agregando nuevos elementos en su lugar
+.sort() ordena los items alfabéticamente o numéricamente 
