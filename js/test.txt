@@ -58,3 +58,4 @@ funciones:
 funciones declaradas son las expresadas directamente en el codigo. la principal ventaja es que pueden ser llamadas incluso antes de ser defnidas.
 funciones expresadas: son aquellas que se definen dentro de una variable ej: let suma = function(num,num2){}
 console.log(suma(1,2));
+funciones arrow: son mas simples pero no tienen this. ej let multiplicacion = (num,num2) => {num*num2}
