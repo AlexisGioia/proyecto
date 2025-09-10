@@ -59,3 +59,6 @@ funciones declaradas son las expresadas directamente en el codigo. la principal 
 funciones expresadas: son aquellas que se definen dentro de una variable ej: let suma = function(num,num2){}
 console.log(suma(1,2));
 funciones arrow: son mas simples pero no tienen this. ej let multiplicacion = (num,num2) => {num*num2}
+
+callbacks: funciones que se ejecutan en otras. si la funcion secundaria necesita tener pasados parámetros la función primaria se los asigna dentro de su bloque de codigo. entonces la función secundaria no necesita parentesis ej:
+respirar("aire",inhalar)// inhalar es una función que tiene parámetros de el gas que inhalara y la cantidad. ambos se los pasa la función inhalar
