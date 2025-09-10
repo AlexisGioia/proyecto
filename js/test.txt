@@ -55,6 +55,7 @@ propiedad: function(){}
 para llamarlo es igual que para obtener una propiedad 
 
 funciones:
+si se le pone un "= valor" a un parametro este se toma por defecto en caso de que se omita al llamar a la funcion
 funciones declaradas son las expresadas directamente en el codigo. la principal ventaja es que pueden ser llamadas incluso antes de ser defnidas.
 funciones expresadas: son aquellas que se definen dentro de una variable ej: let suma = function(num,num2){}
 console.log(suma(1,2));
