@@ -67,3 +67,4 @@ metodos de arrays:
 slice(inicio,fin): corta el array a partir y hacia donde se indica.
 splice(inicio,cant. elem. a elim.,"elemento1", elemento2..) combina el contenido de un array eliminando elementos existentes a partir del inicio o agregando nuevos elementos en su lugar
 .sort() ordena los items alfabéticamente o numéricamente 
+.find() devuelve el primer elemento que cumple con una condición dada en una función de prueba ej edades = [25,18,30,15] let mayor = edades.find(edad => edad >= 18); devuelve 25, solo el primer match
