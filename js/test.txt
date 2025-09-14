@@ -85,3 +85,4 @@ splice(inicio,cant. elem. a elim.,"elemento1", elemento2..) combina el contenido
 .find() devuelve el primer elemento que cumple con una condición dada en una función de prueba ej edades = [25,18,30,15] let mayor = edades.find(edad => edad >= 18); devuelve 25, solo el primer match
 
 bubble sort: dos for. uno que recorra el array el número de items que tenga y otro que realice los swaps. osea un swap por step del for principal 
+binary search necesita que esten ordenados los items para buscar
