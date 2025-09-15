@@ -87,7 +87,7 @@ splice(inicio,cant. elem. a elim.,"elemento1", elemento2..) combina el contenido
 algoritmos:
 metodos de ordenacion:
 bubble sort: ordena de menor a mayor con dos for. uno que recorra el array el número de items que tenga y otro que realice los swaps. osea un swap por step del for principal
-algoritmos de busqueda: linear search: un for que recorre todo el array, si hace match devuelve el item, sino devuelve negativo. 
+algoritmos de busqueda: linear search: un for que recorre todo el array, si hace match devuelve el item, sino devuelve negativo. (en el segundo for va length -1 sino da undefined)
 binary search: Requiere que el array esté ordenado. divide el array en mitades y compara el valor central, si es menor o mayor descarta la parte opuesta y sigue hasta que se iguale.
   inicioBusqueda = 0;
   limiteBusqueda = array.length - 1;
