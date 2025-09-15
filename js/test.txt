@@ -92,7 +92,7 @@ binary search: Requiere que el array esté ordenado. divide el array en mitades 
   inicioBusqueda = 0;
   limiteBusqueda = array.length - 1;
   while (indiceBusqueda <= limiteBusqueda) {
-      const indicemitad = Math.round(inicioBusqueda + limiteBusqueda / 2);
+      const indicemitad = Math.round((inicioBusqueda + limiteBusqueda) / 2);
       const elemMedio = array[indicemitad];
       if (elemMedio.nombre == tema) {
           return elemMedio.votos;
