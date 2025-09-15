@@ -89,10 +89,10 @@ metodos de ordenacion:
 bubble sort: ordena de menor a mayor con dos for. uno que recorra el array el número de items que tenga y otro que realice los swaps. osea un swap por step del for principal
 algoritmos de busqueda: linear search: un for que recorre todo el array, si hace match devuelve el item, sino devuelve negativo. 
 binary search: Requiere que el array esté ordenado. divide el array en mitades y compara el valor central, si es menor o mayor descarta la parte opuesta y sigue hasta que se iguale.
-  indiceBusqueda = 0;
+  inicioBusqueda = 0;
   limiteBusqueda = array.length - 1;
   while (indiceBusqueda <= limiteBusqueda) {
-      const indicemitad = Math.round(indiceBusqueda + limiteBusqueda / 2);
+      const indicemitad = Math.round(inicioBusqueda + limiteBusqueda / 2);
       const elemMedio = array[indicemitad];
       if (elemMedio.nombre == tema) {
           return elemMedio.votos;
@@ -101,7 +101,7 @@ binary search: Requiere que el array esté ordenado. divide el array en mitades 
           limiteBusqueda = indicemitad - 1
       }
       else if (elemMedio.nombre < tema) {
-          limiteBusqueda = indicemitad + 1
+          inicioBusqueda= indicemitad + 1
       }
       else {
           return "NO MATCH"
