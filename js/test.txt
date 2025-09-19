@@ -109,3 +109,4 @@ binary search: Requiere que el array esté ordenado. divide el array en mitades 
   }
 para cargar un js es ta simple como poner en el body <script src="script.js">
 alert prompt y confirm
+for of es de arrays. for in es de objetos 
